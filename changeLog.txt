@@ -1,4 +1,29 @@
 =================================================================================
+V72 (17-02-2025)
+=================================================================================
+- Added AI Roadblocks:
+  - Implemented AI-controlled roadblocks at key chokepoints on ChernarusRedux
+  - Randomized AI count, patrol radius, and search behavior for variability
+  - Improved placement logic to enhance tactical gameplay
+
+- Improved Faction Relations:
+  - Adjusted `setFriend` settings to ensure proper AI hostility between factions
+  - Balanced survivor AI behavior to interact more dynamically with players
+
+- Enhanced Debug Mode:
+  - Increased AI limits and spawn frequency for easier debugging
+  - Improved logging and debugging options for administrators
+
+- Optimized AI Spawns:
+  - Fine-tuned `_occupyVehicleFixedPositions` to ensure correct vehicle spawns per map
+  - Removed invalid vehicle spawn locations that conflicted with other systems
+  - Expanded AI spawn randomization for better engagement variety
+
+- Documentation & Credits Update:
+  - Updated README with AI Roadblocks details and better configuration guidance
+  - Added `skonemesis`, `Ghost`, and `PGM DEV TEAM` to project credits
+
+=================================================================================
 V65 (30-08-2016)
 =================================================================================
 Tweaks to the randomspawn AI to try to get them to search buildings if you hide 
