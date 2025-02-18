@@ -24,7 +24,7 @@ SC_useApexClasses           	= true;                 	// true if you want to use
 SC_useMapOverrides          	= true;                 	// set to true to enable over riding options per map (see the bottom of this file for examples)
 
 SC_maxAIcount			= 100;				// the maximum amount of AI, if the AI count is above this then additional AI won't spawn
-SC_mapMarkers			= false;                	// Place map markers at the occupied areas (occupyPlaces and occupyMilitary only) true/false
+SC_mapMarkers			= true;	                	// Place map markers at the occupied areas (occupyPlaces and occupyMilitary only) true/false
 SC_minFPS			= 5;				// any lower than minFPS on the server and additional AI won't spawn
 SC_scaleAI			= 10;				// any more than _scaleAI players on the server and _maxAIcount is reduced for each extra player
 
