@@ -58,7 +58,7 @@ This project is licensed under the **Creative Commons Attribution-NonCommercial-
 ## Credits
 
 - **Original Author:** [second_coming](https://github.com/secondcoming/a3_exile_occupation)
-- **Contributors:** [FPS]kuplion, [skonemesis], and various community members for updates and fixes.
+- **Contributors:** [FPS]kuplion, sko & Ghost PGM DEV TEAM and various community members for updates and fixes.
 
 ## Support & Contributions
 
