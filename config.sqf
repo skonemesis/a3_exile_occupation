@@ -13,42 +13,43 @@
 
 // Shared Config for each occupation monitor
 
-SC_debug						= false;					// set to true to turn on debug features (not recommended for live servers)
+SC_debug			= false;			// set to true to turn on debug features (not recommended for live servers)
 SC_extendedLogging          	= false;                	// set to true for additional 
-SC_infiSTAR_log					= true;						// true Use infiSTAR logging, false logs to server rpt
+SC_infiSTAR_log			= true;				// true Use infiSTAR logging, false logs to server rpt
 
 SC_useApexClasses           	= true;                 	// true if you want to use the Apex class list over rides, false to use vanilla Arma gear
 SC_useMapOverrides          	= true;                 	// set to true to enable over riding options per map (see the bottom of this file for examples)
 
-SC_maxAIcount					= 100;						// the maximum amount of AI, if the AI count is above this then additional AI won't spawn
-SC_mapMarkers					= false;                	// Place map markers at the occupied areas (occupyPlaces and occupyMilitary only) true/false
-SC_minFPS						= 5;				    	// any lower than minFPS on the server and additional AI won't spawn
-SC_scaleAI						= 10;						// any more than _scaleAI players on the server and _maxAIcount is reduced for each extra player
+SC_maxAIcount			= 100;				// the maximum amount of AI, if the AI count is above this then additional AI won't spawn
+SC_mapMarkers			= false;                	// Place map markers at the occupied areas (occupyPlaces and occupyMilitary only) true/false
+SC_minFPS			= 5;				// any lower than minFPS on the server and additional AI won't spawn
+SC_scaleAI			= 10;				// any more than _scaleAI players on the server and _maxAIcount is reduced for each extra player
 
 SC_minDistanceToSpawnZones  	= 750;                  	// Minimum distance in metres to the nearest spawn zone
 SC_minDistanceToTraders     	= 750;                  	// Minimum distance in metres to the nearest trader zone
 SC_minDistanceToTerritory   	= 350;                  	// Minimum distance in metres to the nearest player territory
 SC_minDistanceToPlayer      	= 250;                  	// Minimum distance in metres to the nearest player
-SC_useWaypoints					= true;                 	// When spawning AI create waypoints to make them enter buildings (can affect performance when the AI is spawned and the waypoints are calculated)
+SC_useWaypoints			= true;                 	// When spawning AI create waypoints to make them enter buildings (can affect performance when the AI is spawned and the waypoints are calculated)
 
+SC_occupyRoadblocks 		= true; 			// Enable roadblocks
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	Turn Modules On or Off (can be overridden in the map overrides section)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-SC_processReporter				= true;                 	// log the a list of active server processes every 60 seconds (useful for debugging server problems)
+SC_processReporter		= true;                 	// log the a list of active server processes every 60 seconds (useful for debugging server problems)
 SC_fastNights               	= true;						// true if you want night time to go faster than daytime
-SC_occupyPlaces 				= true;						// true if you want villages,towns,cities patrolled by bandits
+SC_occupyPlaces 		= true;						// true if you want villages,towns,cities patrolled by bandits
 SC_occupyTraders            	= true;						// true if you want to create trader camps at positions specified in SC_occupyTraderDetails
-SC_occupyStatic	 		    	= false;		    		// true if you want to add AI in specific locations
-SC_occupyTransport 	        	= true;						// true if you want pubic transport (travels between traders)
-SC_occupyLootCrates		    	= true;						// true if you want to have random loot crates with guards
+SC_occupyStatic	 		= false;		    		// true if you want to add AI in specific locations
+SC_occupyTransport 	        = true;						// true if you want pubic transport (travels between traders)
+SC_occupyLootCrates		= true;						// true if you want to have random loot crates with guards
 SC_occupyRandomSpawn        	= true;                		// (WORK IN PROGRESS) true if you want random spawning AI that hunt for nearby players
-SC_occupyMilitary 		    	= true;			    		// true if you want military buildings patrolled
-SC_occupyVehicle				= true;						// true if you want to have roaming AI land vehicles
-SC_occupySky					= true;						// true if you want to have roaming AI helis
-SC_occupySea					= true;						// true if you want to have roaming AI boats
-SC_occupyHeliCrashes			= true;						// true if you want to have Dayz style helicrashes
+SC_occupyMilitary 		= true;			    		// true if you want military buildings patrolled
+SC_occupyVehicle		= true;						// true if you want to have roaming AI land vehicles
+SC_occupySky			= true;						// true if you want to have roaming AI helis
+SC_occupySea			= true;						// true if you want to have roaming AI boats
+SC_occupyHeliCrashes		= true;						// true if you want to have Dayz style helicrashes
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	Fast nights Setup
@@ -67,32 +68,32 @@ SC_randomSpawnMinPlayers    	= 1;                    	// Minimum number of playe
 SC_randomSpawnMaxGroups        	= 4;                    	// Maximum amount of random AI groups allowed at any time
 SC_randomSpawnMinGroupSize      = 2;                    	// Minimum amount of random AI groups allowed per group
 SC_randomSpawnMaxGroupSize      = 5;                    	// Maximum amount of random AI groups allowed per group
-SC_randomSpawnChance			= 12;						// Percentage chance of spawning if suitable player found
-SC_randomSpawnIgnoreCount		= true;						// true if you want spawn random AI groups regardless of overall AI count (they still count towards the total though)
-SC_randomSpawnFrequency			= 3600;						// time in seconds between the possibility of random AI hunting the same player (1800 for 30 minutes)
-SC_randomSpawnNearBases			= true;						// true if you want to allow random spawns in range of territories
-SC_randomSpawnNearSpawns		= false;					// true if you want to allow random spawns in range of spawn zones
-SC_randomSpawnTargetBambis		= false;					// true if you want to allow random spawns to target bambis
-SC_randomSpawnAnnounce			= true;						// true if you want a warning toast issued to all players when AI spawns
-SC_randomSpawnNameTarget		= true;						// true if you want to name the targeted player
+SC_randomSpawnChance		= 12;						// Percentage chance of spawning if suitable player found
+SC_randomSpawnIgnoreCount	= true;						// true if you want spawn random AI groups regardless of overall AI count (they still count towards the total though)
+SC_randomSpawnFrequency		= 3600;						// time in seconds between the possibility of random AI hunting the same player (1800 for 30 minutes)
+SC_randomSpawnNearBases		= true;						// true if you want to allow random spawns in range of territories
+SC_randomSpawnNearSpawns	= false;					// true if you want to allow random spawns in range of spawn zones
+SC_randomSpawnTargetBambis	= false;					// true if you want to allow random spawns to target bambis
+SC_randomSpawnAnnounce		= true;						// true if you want a warning toast issued to all players when AI spawns
+SC_randomSpawnNameTarget	= true;						// true if you want to name the targeted player
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	Occupy Places Setup
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-SC_occupyPlacesSurvivors		= true;						// true if you want a chance to spawn survivor AI as well as bandits (SC_occupyPlaces must be true to use this option)
+SC_occupyPlacesSurvivors	= true;						// true if you want a chance to spawn survivor AI as well as bandits (SC_occupyPlaces must be true to use this option)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	Trader Base Setup
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SC_occupyTraderDetails      	= [
-									//["mapname", "Name", [x,y,z], "filename", true, trader name, location, safezone true/false, safezone radius]
-									//["Tanoa", "Lifou Traders", [7317,7217,0], "trader1.sqf", true, 175],
-									//["Tanoa", "Lijnhaven Traders", [11580,2051,0], "trader1.sqf", true, 175],
-									//["Napf", "Hafen Traders", [9286,17606,0], "trader1.sqf", true, 175],
-									["Chernarus", "Cherno Test Traders", [7317,7217,0], "trader1.sqf", true, 250]
-								  ];
+					//["mapname", "Name", [x,y,z], "filename", true, trader name, location, safezone true/false, safezone radius]
+					//["Tanoa", "Lifou Traders", [7317,7217,0], "trader1.sqf", true, 175],
+					//["Tanoa", "Lijnhaven Traders", [11580,2051,0], "trader1.sqf", true, 175],
+					//["Napf", "Hafen Traders", [9286,17606,0], "trader1.sqf", true, 175],
+					["Chernarus", "Cherno Test Traders", [7317,7217,0], "trader1.sqf", true, 250]
+				  ];
         	
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	Occupy Static Setup
@@ -595,7 +596,7 @@ SC_SurvivorFirstNames 			= [
 									// North America
 									"James","Michael","William","John","Robert","David","Daniel","Joseph",
 									// Latin America
-									"Carlos","José","Juan","Luis","Miguel","Diego","Antonio","Javier",
+									"Carlos","JosÃ©","Juan","Luis","Miguel","Diego","Antonio","Javier",
 									// Europe
 									"Thomas","Liam","Noah","Matteo","Leon","Luca","Oscar","Nikolai",
 									// Middle East
@@ -609,9 +610,9 @@ SC_SurvivorLastNames 			= [
 									// North America
 									"Smith","Johnson","Brown","Williams","Jones","Miller","Davis","Wilson",
 									// Latin America
-									"González","Rodríguez","Fernández","López","Martínez","Sánchez","Pérez",
+									"GonzÃ¡lez","RodrÃ­guez","FernÃ¡ndez","LÃ³pez","MartÃ­nez","SÃ¡nchez","PÃ©rez",
 									// Europe
-									"Schmidt","Dubois","Bianchi","Andersen","Müller","Kowalski","Novak",
+									"Schmidt","Dubois","Bianchi","Andersen","MÃ¼ller","Kowalski","Novak",
 									// Middle East
 									"Haddad","Nassif","Rahman","Khan","Farouk","Al-Farsi","Yazid","Saleh",
 									// Africa
